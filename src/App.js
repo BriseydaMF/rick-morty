@@ -1,10 +1,12 @@
-import imageRickMorty from './img/rick-morty.png' ;
+import imageRickMorty from "./img/rick-morty.png" ;
 import './App.css';
 
 function App() {
 
-  const reqApi = () => {
-    console.log("Clicking");
+  const reqApi = async () => {
+    const api = await fetch("https://rickandmortyapi.com/api/character")
+
+    console.log(api);
   };
 
   return (
