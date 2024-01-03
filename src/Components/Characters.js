@@ -4,8 +4,9 @@ export default function Characters(props) {
 
   return (
     <div className="characters"> 
+
         <h1>Personajes</h1>
-        <span className="bac-home">Volver a la home</span>
+        <span className="back-home">Volver a la home</span>
         <div className="container-characters">
             {characters.map((character, index) => (
                 <div className="character-container" key={index}>

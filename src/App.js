@@ -7,7 +7,7 @@ function App() {
   const [characters, setCharacters] = useState(null);
 
   const reqApi = async () => {
-    const api = await fetch("https://rickandmortyapi.com/api/character")
+    const api = await fetch("https://rickandmortyapi.com/api/character");
     const characterApi = await api.json();
 
     setCharacters(characterApi.results);
@@ -22,10 +22,10 @@ function App() {
           <Characters characters={characters} />
         ) : (
           <>
-          <img src={imageRickMorty} alt="Rick & Morty" className="img-home" />
-          <button onClick={reqApi} className="btn-search">
-          Buscar personajes
-          </button>
+            <img src={imageRickMorty} alt="Rick & Morty" className="img-home" />
+            <button onClick={reqApi} className="btn-search">
+              Buscar personajes
+            </button>
           </>
         )}
       </header>
