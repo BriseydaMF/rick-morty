@@ -9,8 +9,10 @@ export default function Characters(props) {
         <div className="container-characters">
             {characters.map((character, index) => (
                 <div className="character-container" key={index}>
-                    <p>{character.name}</p>
+                    <div>
+                     <img src={character.image} alt={character.name} />
                     </div>
+                </div>
             ))}
         </div>
     </div>
