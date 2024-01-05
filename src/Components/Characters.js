@@ -15,5 +15,5 @@ export default function Characters(props) {
             ))}
         </div>
     </div>
-  )
+  );
 }
