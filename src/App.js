@@ -13,7 +13,7 @@ function App() {
     setCharacters(characterApi.results);
   };
   
-  console.log(characters);
+  
 
   return (
     <div className="App">
