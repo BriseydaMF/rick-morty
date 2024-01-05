@@ -3,7 +3,7 @@ export default function Characters(props) {
 
     const resetCharacters = () => {
        setCharacters(null);
-    }
+    };
     
   return (
     <div className="characters">
